@@ -1,0 +1,16 @@
+name = "yyy"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "yyy_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "yyy.wasm"
+command = "npm run build:release"
